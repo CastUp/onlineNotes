@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Online Notes</string>
+    <string name="sign_in_with_google">Continue with Google</string>
+    <string name="forgrt_password">Forget password</string>
+    <string name="facebook_app_id">3148860145211584</string>
+    <string name="fb_login_protocol_scheme">fb3148860145211584</string>
+    <string name="open">Open</string>
+    <string name="Close">Close</string>
+    <string name="username">UserName</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="hello">Hello</string>
+    <string name="search_note">Search note</string>
+    <string name="title_note">Note Title..</string>
+    <string name="note_subtitle">Note Subtitle</string>
+    <string name="type_note_here">Type note here</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="camera">Camera</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_voice">Add Voice</string>
+    <string name="add_link">Add Link</string>
+    <string name="new_tag">New Tag</string>
+    <string name="create_new_tag">Create new tag</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="add_url">Add URL</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="note_update">Note Show Or Update</string>
+    <string name="note_share">Note Share</string>
+    <string name="note_share_whats_up">Note Share Whats up</string>
+    <string name="downloading_photo">DownLoading Photo</string>
+    <string name="note_delete">Note Delete</string>
+    <string name="delete">Delete</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="are_you_sure_want_to_delete_this_note">Are you sure want to delete this note?</string>
+    <string name="downloading_voice">Downloading Voice</string>
+    <string name="tags">AllNotes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stopped">stopped...</string>
+    <string name="stopedd">Stopedd</string>
+    <string name="are_you_sure_want_to_delete_this_voice">Are you sure want to delete this voice?</string>
+    <string name="delete_voice">Delete voice</string>
+    <string name="share_note">Share Note</string>
+    <string name="add_note">Add note</string>
+    <string name="welcome_to_online_notes_n_n_from_custup">Welcome to OnLine Notes \n \n From Castup</string>
+    <string name="online_notes">Online Notes</string>
+
+
+</resources>

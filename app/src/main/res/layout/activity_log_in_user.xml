@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTextSubtitle"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.LogInUser">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textOnline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/online_notes"
+                android:textSize="@dimen/_22ssp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="center|start"
+                android:textStyle="italic"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginHorizontal="@dimen/_35sdp"
+        android:layout_gravity="center"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/loginGoogle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:drawableStart="@drawable/ic_google_login"
+                    android:text="@string/sign_in_with_google"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/_12ssp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/background_login_google"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/login_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:drawableStart="@drawable/ic_facebook_login"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/_12ssp"
+                    android:background="@drawable/background_login_facebook"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:text="@string/com_facebook_loginview_log_in_button_continue"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:layout_constraintStart_toStartOf="@id/loginGoogle"
+                    app:layout_constraintEnd_toEndOf="@id/loginGoogle"
+                    app:layout_constraintTop_toBottomOf="@id/loginGoogle"/>
+
+                <TextView
+                    android:id="@+id/line_log"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="#464444"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    app:layout_constraintStart_toStartOf="@id/login_facebook"
+                    app:layout_constraintEnd_toEndOf="@id/login_facebook"
+                    app:layout_constraintTop_toBottomOf="@id/login_facebook"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textColor="#FF9800"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:text="@string/welcome_to_online_notes_n_n_from_custup"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/line_log"
+                    app:layout_constraintEnd_toEndOf="@id/line_log"
+                    app:layout_constraintTop_toBottomOf="@id/line_log"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

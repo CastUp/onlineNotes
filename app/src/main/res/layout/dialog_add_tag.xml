@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutDialogAddTags"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:background="@drawable/dialog_add_tag"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/newTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="Create New Tag"
+        android:textColor="#FFC107"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/insertNameTag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_80sdp"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/ubuntu_regular"
+        android:gravity="center|start"
+        android:hint="@string/create_new_tag"
+        android:singleLine="true"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colortextHint"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTag" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/showColorTag"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardBackgroundColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/insertNameTag"
+        app:layout_constraintStart_toEndOf="@id/insertNameTag"
+        app:layout_constraintTop_toTopOf="@id/insertNameTag" />
+
+    <ImageView
+        android:id="@+id/chooseColorTag"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/color_picker2"
+        app:layout_constraintBottom_toBottomOf="@id/insertNameTag"
+        app:layout_constraintStart_toEndOf="@id/showColorTag"
+        app:layout_constraintTop_toTopOf="@id/insertNameTag" />
+
+    <TextView
+        android:id="@+id/addTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/add"
+        android:textColor="#FFC107"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/insertNameTag" />
+
+    <TextView
+        android:id="@+id/cancelTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/cancel"
+        android:textColor="#F53324"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toStartOf="@id/addTag"
+        app:layout_constraintTop_toBottomOf="@id/insertNameTag" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/background_tablelayout"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/showColorTag">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_3sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/A"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#000"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/B"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#919FF7"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/C"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#00B8D4"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/D"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#333333"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/E"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#AA00FF"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/F"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#64DD17"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_3sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/A1"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#FF6D00"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/B1"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#FFFFFF"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#000000"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/C1"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#EE2C2C"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/D1"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#FFD600"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/E1"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#08AA4C"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/F1"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="#0B2AD6"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="@dimen/_2sdp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
